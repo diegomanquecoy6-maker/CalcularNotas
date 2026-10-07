@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Notas Universitarias</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="contenedor">
+        <h1>Calculadora de Ponderaciones</h1>
+        <p>Ingresa tus notas (1.0 a 7.0) y el porcentaje que valen.</p>
+        
+        <!-- Aquí vivirán nuestras filas de inputs -->
+        <div id="contenedor-notas">
+            <div class="fila-nota">
+                <input type="number" class="nota" placeholder="Ej: 5.5" step="0.1" min="1" max="7">
+                <input type="number" class="porcentaje" placeholder="Porcentaje %" min="1" max="100">
+                <button class="btn-eliminar">X</button>
+            </div>
+        </div>
+
+        <div class="acciones">
+            <button id="btn-agregar" class="btn-secundario">+ Agregar otra nota</button>
+            <button id="btn-calcular" class="btn-principal">Calcular Promedio</button>
+        </div>
+
+        <div id="resultado" class="oculto">
+            <h2>Tu promedio es: <span id="promedio-final">0.0</span></h2>
+            <p id="mensaje"></p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
