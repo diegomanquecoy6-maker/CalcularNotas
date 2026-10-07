@@ -1,0 +1,111 @@
+/* Reseteamos márgenes para trabajar ordenado */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.contenedor {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* Diseño de las filas de inputs */
+.fila-nota {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+input {
+    flex: 1;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* Botones con transiciones suaves */
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.btn-eliminar {
+    background: #e74c3c;
+    color: white;
+    padding: 0.8rem 1rem;
+}
+
+.btn-eliminar:hover { background: #c0392b; }
+
+.acciones {
+    display: flex;
+    gap: 10px;
+    margin-top: 1.5rem;
+}
+
+.btn-secundario {
+    flex: 1;
+    background: #ecf0f1;
+    color: #2c3e50;
+    padding: 1rem;
+}
+
+.btn-secundario:hover { background: #bdc3c7; }
+
+.btn-principal {
+    flex: 1;
+    background: #3498db;
+    color: white;
+    padding: 1rem;
+}
+
+.btn-principal:hover { background: #2980b9; }
+
+/* Caja de resultados */
+#resultado {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.oculto { display: none; }
+.aprobado { background: #d4edda; color: #155724; }
+.reprobado { background: #f8d7da; color: #721c24; }
